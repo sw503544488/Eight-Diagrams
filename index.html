@@ -7,7 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style id="style">
-    body {}
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    *::after {
+      box-sizing: border-box;
+
+    }
+
+    *::before {
+      box-sizing: border-box;
+
+    }
 
     #demo {
       word-wrap: break-word;
@@ -50,11 +67,13 @@
         height: 40vh;
 
       }
-.box1{
-  margin-top: 25px;
-  position: relative;
-  height: 50vh;
-}
+
+      .box1 {
+        margin-top: 25px;
+        position: relative;
+        height: 50vh;
+      }
+
       #div1 {
         position: absolute;
         margin: auto;
