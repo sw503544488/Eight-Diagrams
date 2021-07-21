@@ -4,14 +4,13 @@ let style = document.querySelector('#style')
 let n = 0
 let string = `/**
 *你好,我叫商伟
-*接下来我要演示下我的前端功底
+*接下来我要演示下怎么绘制一个太极图
 *首先我要准备一个div
 */
 #div1{  
    border:1px solid  black; 
 }
-/**接下来我把
-*要把div变成一个八卦图
+/*
 *注意看好了
 *首先把div变成一个圆
 **/
