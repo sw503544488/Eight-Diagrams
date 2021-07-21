@@ -2,14 +2,13 @@ let html = document.querySelector("#demo")
 let style = document.querySelector('#style')
 
 let n = 0
-let string = `/*
+let string = `/**
 *你好,我叫商伟
 *接下来我要演示下我的前端功底
-*首先我要准备一个div*/
+*首先我要准备一个div
+*/
 #div1{  
-   border:1px solid  black;
-   width:300px;
-   height:300px;
+   border:1px solid  black; 
 }
 /**接下来我把
 *要把div变成一个八卦图
@@ -23,7 +22,7 @@ let string = `/*
 }
 /**八卦是阴阳形成的
  * 一黑一白
- */
+ **/
  #div1{
    background: rgb(255,255,255);
    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
@@ -36,18 +35,16 @@ let string = `/*
   }
 /**加两个小球
  * 首先加一个黑色的小球
- */
+ **/
 #div1::after {
    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);  
   }
 /**
  * 然后加一个白色的球
- */
+**/
 #div1::before {
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
   }
-
-
 `
 let string2 = ''
 let string3=style.innerHTML
@@ -86,7 +83,7 @@ let steptime = () => {
     //substring 显示字符串0-n个字符 
     n = n + 1
     steptime()
-  }, 10)
+  }, 50)
 }
 steptime()
 
