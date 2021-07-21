@@ -7,7 +7,7 @@ let string = `/*
 *接下来我要演示下我的前端功底
 *首先我要准备一个div*/
 #div1{  
-   border:1px solid  transparent;
+   border:1px solid  black;
    width:300px;
    height:300px;
 }
