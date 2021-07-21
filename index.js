@@ -52,7 +52,6 @@ let string3=style.innerHTML
 
 let steptime = () => {
   setTimeout(() => {
-    console.log(n)
     if (n >= string.length) {
       return  //如果n大于字符串长度之后直接退出
     }
@@ -72,7 +71,6 @@ let steptime = () => {
     }
     
     style.innerHTML=string3//照搬string2会出现
-    console.log(style.innerHTML)
 
     html.innerHTML = string2
     window.scrollTo(0,5000) //设置滚动条滚到底部
