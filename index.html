@@ -9,47 +9,71 @@
   <style id="style">
     body {}
 
-    #div1 {
+    #demo {
+      word-wrap: break-word;
+    }
 
+    #div1 {
       position: fixed;
       right: 20px;
       top: 20px;
     }
 
     #div1::before {
-      width: 200px;
-  height: 200px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
       content: '';
       position: absolute;
       display: block;
     }
 
     #div1::after {
-      width: 200px;
-  height: 200px;
+      width: 150px;
+      height: 150px;
       content: '';
       top: 0;
-  left: 50%; 
-  transform: translateX(-50%);
-  border-radius: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
       position: absolute;
       display: block;
-      background: rgb(255,255,255);
-
     }
 
+    @media (max-width:500px) {
+      #demo {
+        position: relative;
+        overflow: auto;
+        height: 40vh;
 
+      }
+.box1{
+  margin-top: 25px;
+  position: relative;
+  height: 50vh;
+}
+      #div1 {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <span id="demo">hi</span>
-  <div id="div1"></div>
+  <div id="demo" class="box">hi</div>
+  <div class="box1">
+    <div id="div1"></div>
+  </div>
+
   <script src="index.js"></script>
 
 

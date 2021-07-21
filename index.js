@@ -8,8 +8,8 @@ let string = `/*
 *首先我要准备一个div*/
 #div1{  
    border:1px solid  transparent;
-   width:400px;
-   height:400px;
+   width:300px;
+   height:300px;
 }
 /**接下来我把
 *要把div变成一个八卦图
@@ -79,6 +79,8 @@ let steptime = () => {
     console.log(style.innerHTML)
 
     html.innerHTML = string2
+    window.scrollTo(0,5000) //设置滚动条滚到底部
+        html.scrollTo(0,5000) //设置滚动条滚到底部
 
     // demo.innerHTML = string.substring(0,n) 
     //substring 显示字符串0-n个字符 
