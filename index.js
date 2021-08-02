@@ -80,7 +80,7 @@ let steptime = () => {
     //substring 显示字符串0-n个字符 
     n = n + 1
     steptime()
-  }, 50)
+  }, 10)
 }
 steptime()
 
